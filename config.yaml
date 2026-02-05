@@ -1,0 +1,16 @@
+dataset:
+  train_path: "path/to/train"
+  val_path: "path/to/val"
+
+model:
+  name: "YourModelName"
+  num_classes: 20
+
+processing:
+  batch_size: 32
+  num_epochs: 50
+  learning_rate: 0.001
+  augmentations:
+    - resize
+    - flip
+    - normalize
