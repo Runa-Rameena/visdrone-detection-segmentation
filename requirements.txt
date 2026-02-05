@@ -1,1 +1,27 @@
-numpy\nopencv-python\ntorch==1.12.0+cu113  # Adjust the version based on your CUDA version\ntorchvision==0.13.0+cu113\nscikit-learn\nmatplotlib\npandas\nrequests\n
+# YOLOv11, RF-DETR, SAM, and General Computer Vision Dependencies
+
+numpy
+opencv-python
+scikit-learn
+scipy
+matplotlib
+tensorflow
+pytorch
+Pillow
+imageio
+supervisely-lib
+matplotlib
+seaborn
+PyYAML
+requests
+tqdm
+pycocotools
+
+# Additional Dependencies for YOLOv11
+keras
+
+# Additional Dependencies for RF-DETR
+transformers
+
+# Additional Dependencies for SAM
+segmentation-models-pytorch
