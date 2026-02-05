@@ -1,0 +1,1 @@
+numpy\nopencv-python\ntorch==1.12.0+cu113  # Adjust the version based on your CUDA version\ntorchvision==0.13.0+cu113\nscikit-learn\nmatplotlib\npandas\nrequests\n
