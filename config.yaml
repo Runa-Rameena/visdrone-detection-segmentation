@@ -1,16 +1,15 @@
-dataset:
-  train_path: "path/to/train"
-  val_path: "path/to/val"
-
-model:
-  name: "YourModelName"
-  num_classes: 20
-
-processing:
-  batch_size: 32
-  num_epochs: 50
+dataset_paths:
+  train: "path/to/train/dataset"
+  val: "path/to/validation/dataset"
+model_parameters:
   learning_rate: 0.001
-  augmentations:
-    - resize
-    - flip
-    - normalize
+  batch_size: 16
+  num_epochs: 50
+image_preprocessing_settings:
+  resize_dimensions: [224, 224]
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+evaluation_thresholds:
+  iou_threshold: 0.5
+  confidence_threshold: 0.7
