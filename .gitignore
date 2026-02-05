@@ -1,0 +1,9 @@
+# Exclude large dataset files
+dataset/
+
+# Exclude model files
+models/
+
+# Exclude Python cache files
+__pycache__/
+*.py[cod]
