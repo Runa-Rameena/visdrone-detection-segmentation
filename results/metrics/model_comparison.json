@@ -1,0 +1,152 @@
+{
+  "overall_metrics": {
+    "yolo": {
+      "precision": 0.0025815217391304346,
+      "recall": 0.00025209972534398343,
+      "f1_score": 0.0004593421736555176,
+      "mAP": 0.003670046584086948,
+      "total_tp": 19,
+      "total_fp": 7341,
+      "total_fn": 75348
+    },
+    "rtdetr": {
+      "precision": 0.0010822510822510823,
+      "recall": 0.0006236151100614327,
+      "f1_score": 0.000791279094237973,
+      "mAP": 0.005933090122264267,
+      "total_tp": 47,
+      "total_fp": 43381,
+      "total_fn": 75320
+    }
+  },
+  "inference_stats": {
+    "yolo": {
+      "total_images": 1610,
+      "total_detections": 7360,
+      "avg_detections_per_image": 4.571428571428571,
+      "total_inference_time": 554.4662630558014,
+      "avg_time_per_image": 0.3443889832644729,
+      "fps": 2.9036933484949827
+    },
+    "rtdetr": {
+      "total_images": 1610,
+      "total_detections": 43428,
+      "avg_detections_per_image": 26.973913043478262,
+      "total_inference_time": 3630.0006358623505,
+      "avg_time_per_image": 2.254658780038727,
+      "fps": 0.44352609310701263
+    }
+  },
+  "small_object_analysis": {
+    "yolo": {
+      "predictions": {
+        "medium": {
+          "total_detections": 2286,
+          "mean_confidence": 0.5028237075213268,
+          "std_confidence": 0.17828101152051776,
+          "mean_area": 2521.1918292836913,
+          "median_area": 1908.8256667298265,
+          "mean_aspect_ratio": 1.1731749411035044
+        },
+        "small": {
+          "total_detections": 4605,
+          "mean_confidence": 0.43448084981770263,
+          "std_confidence": 0.143066928526949,
+          "mean_area": 479.6038002058376,
+          "median_area": 443.3319691121578,
+          "mean_aspect_ratio": 1.1233567276836713
+        },
+        "large": {
+          "total_detections": 469,
+          "mean_confidence": 0.44465323634493326,
+          "std_confidence": 0.16478454149987354,
+          "mean_area": 98095.66466354231,
+          "median_area": 71671.80187886953,
+          "mean_aspect_ratio": 1.4004789754717826
+        }
+      },
+      "thresholds": {
+        "small": "< 32x32",
+        "medium": "32x32 to 96x96",
+        "large": "> 96x96"
+      },
+      "ground_truth": {
+        "medium": 22013,
+        "small": 50915,
+        "large": 2439
+      },
+      "detection_rates": {
+        "medium": {
+          "ground_truth_count": 22013,
+          "detection_count": 2286,
+          "detection_rate": 0.10384772634352428
+        },
+        "small": {
+          "ground_truth_count": 50915,
+          "detection_count": 4605,
+          "detection_rate": 0.09044485907885692
+        },
+        "large": {
+          "ground_truth_count": 2439,
+          "detection_count": 469,
+          "detection_rate": 0.1922919229192292
+        }
+      }
+    },
+    "rtdetr": {
+      "predictions": {
+        "medium": {
+          "total_detections": 7085,
+          "mean_confidence": 0.5262220586448297,
+          "std_confidence": 0.2169188353262168,
+          "mean_area": 2381.0077574251663,
+          "median_area": 1797.2854367885739,
+          "mean_aspect_ratio": 1.1998068258521823
+        },
+        "small": {
+          "total_detections": 35924,
+          "mean_confidence": 0.40714299495379336,
+          "std_confidence": 0.14771618176532034,
+          "mean_area": 310.4165010654197,
+          "median_area": 225.14145728677977,
+          "mean_aspect_ratio": 0.9982113440328588
+        },
+        "large": {
+          "total_detections": 419,
+          "mean_confidence": 0.4744402954714964,
+          "std_confidence": 0.21592649262135905,
+          "mean_area": 28797.76138921458,
+          "median_area": 15852.887910766527,
+          "mean_aspect_ratio": 1.4400095551173402
+        }
+      },
+      "thresholds": {
+        "small": "< 32x32",
+        "medium": "32x32 to 96x96",
+        "large": "> 96x96"
+      },
+      "ground_truth": {
+        "medium": 22013,
+        "small": 50915,
+        "large": 2439
+      },
+      "detection_rates": {
+        "medium": {
+          "ground_truth_count": 22013,
+          "detection_count": 7085,
+          "detection_rate": 0.3218552673420252
+        },
+        "small": {
+          "ground_truth_count": 50915,
+          "detection_count": 35924,
+          "detection_rate": 0.7055681037022489
+        },
+        "large": {
+          "ground_truth_count": 2439,
+          "detection_count": 419,
+          "detection_rate": 0.17179171791717918
+        }
+      }
+    }
+  }
+}

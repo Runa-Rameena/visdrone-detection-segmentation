@@ -1,27 +1,27 @@
-# YOLOv11, RF-DETR, SAM, and General Computer Vision Dependencies
+# Core dependencies
+numpy>=1.24.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+pyyaml>=6.0
+tqdm>=4.65.0
 
-numpy
-opencv-python
-scikit-learn
-scipy
-matplotlib
-tensorflow
-pytorch
-Pillow
-imageio
-supervisely-lib
-matplotlib
-seaborn
-PyYAML
-requests
-tqdm
-pycocotools
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
 
-# Additional Dependencies for YOLOv11
-keras
+# YOLO
+ultralytics>=8.0.0
 
-# Additional Dependencies for RF-DETR
-transformers
+# SAM
+segment-anything>=1.0
+git+https://github.com/facebookresearch/segment-anything.git
 
-# Additional Dependencies for SAM
-segmentation-models-pytorch
+# Evaluation metrics
+scikit-learn>=1.3.0
+pycocotools>=2.0.6
+
+# Visualization
+plotly>=5.14.0
