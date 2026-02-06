@@ -20,7 +20,7 @@ visdrone-detection-segmentation/
 ├── config.yaml
 │
 ├── data/
-│   ├── raw/                  # Place your downloaded VisDrone dataset here
+│   ├── raw/                 
 │   ├── processed/            # Preprocessed images and annotations
 │   └── splits/               # Train/val/test split files
 │
@@ -144,7 +144,7 @@ After running the complete pipeline, you'll find:
 - `results/detections/rtdetr/` - RT-DETR detection visualizations
 
 ### Segmentation Results
-- `results/segmentations/sam/` - SAM segmentation masks
+- `results/segmentations/sam/` - SAM segmentation masks( not implemented yet)
 
 ### Metrics
 - `results/metrics/yolo_evaluation.json` - Complete YOLO evaluation
@@ -220,23 +220,6 @@ This project is structured for easy demonstration:
 3. **Comprehensive Report**: Markdown report with all metrics and insights
 4. **Reproducible**: Fixed random seeds and documented configuration
 
-## 🐛 Troubleshooting
-
-### CUDA Out of Memory
-- Reduce batch size in model inference
-- Use smaller models (yolov8n instead of yolov8x)
-
-### SAM Checkpoint Not Found
-```bash
-# Download the checkpoint
-wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
-# Update path in config.yaml
-```
-
-### Dataset Path Issues
-- Ensure images are in `data/raw/images/`
-- Ensure annotations are in `data/raw/annotations/`
-- Update paths in `scripts/02_preprocess_data.py` if needed
 
 ## 📚 References
 
@@ -249,9 +232,7 @@ wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 
 This project is for educational and research purposes.
 
-## 🤝 Contributing
 
-For hackathon use: Feel free to extend with additional models, metrics, or visualizations!
 
 ## ✨ Acknowledgments
 
